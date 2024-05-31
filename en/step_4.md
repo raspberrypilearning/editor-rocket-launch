@@ -16,7 +16,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 18
-line_highlights: 24, 26
+line_highlights: 22, 24
 ---
 
 def setup():   
