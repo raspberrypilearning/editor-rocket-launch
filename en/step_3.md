@@ -19,6 +19,7 @@ line_highlights: 22
 def setup():
     # Set up your animation here
     size(screen_size, screen_size)
+    image_mode(CENTER)
     global planet
     planet = load_image('planet.png')
 --- /code ---

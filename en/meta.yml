@@ -6,13 +6,13 @@ listed: false
 copyedit: false
 last_tested: "2022-05-19"
 steps:
-  - title: Set the scene
-  - title: Liftoff!
+  - title: Draw the background
+  - title: Add a planet
     completion:
       - engaged
-  - title: Exhaust effects
-  - title: Burn fuel
-  - title: Reaching orbit
+  - title: A different planet?
+  - title: Load the rocket image
+  - title: Draw the rocket
     completion:
       - internal
   - title: Quick quiz

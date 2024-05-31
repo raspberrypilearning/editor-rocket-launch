@@ -1,3 +1,385 @@
+
+
+
+
+
+<div style="display: flex; flex-wrap: wrap">
+<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
+Each time a new frame is drawn, the rocket needs to move up the screen to create an animation effect.
+</div>
+<div>
+
+![A rocket flying at a steady speed from the bottom to the top of the screen.](images/fly.gif){:width="300px"}
+
+</div>
+</div>
+
+
+
+### Make the rocket fly
+
+The `y` position of the rocket will start at 400 (the screen height) and then decrease by 1 each time a new frame is drawn.
+
+--- task ---
+
+
+
+--- /task ---
+
+--- task ---
+
+Define a `draw_rocket()` function to change the rocket's `y` position and redraw it.
+
+`rocket_y -= 1` is a shorter way of saying `rocket_y = rocket_y - 1`.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 11 
+line_highlights: 12-16 
+---
+
+# The draw_rocket function goes here   
+def draw_rocket():   
+    global rocket_y  # Use the global rocket_y variable    
+    rocket_y -= 1  # Move the rocket    
+    image(rocket, width/2, rocket_y, 64, 64)    
+
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Call your new `draw_rocket()` in the `draw()` function so that the rocket gets redrawn every frame.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 33 
+line_highlights: 36 
+---
+
+def draw():   
+    # Things to do in every frame   
+    draw_background()   
+    draw_rocket()   
+
+
+--- /code ---
+
+--- /task ---
+
+--- task ---  
+
+**Test:** Run your code to check that the rocket starts at the bottom of the screen and moves up each frame.
+
+![Animation of the rocket flying half way up the screen.](images/rocket_fly.gif)
+
+--- /task ---
+
+--- save ---
+
+
+
+## Exhaust effects
+
+<div style="display: flex; flex-wrap: wrap">
+<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
+
+The rocket will look more realistic with some special effects to simulate the exhaust trail. 
+
+You can create cool effects by using a `for` loop to draw lots of shapes in each frame.
+
+</div>
+<div>
+
+![The rocket mid flight with an exhaust trail.](images/flying_rocket.gif){:width="300px"}
+
+</div>
+</div>
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+Coding is used to make <span style="color: #0faeb0">**graphic effects**</span> for movies and games. It's much quicker to write code than to draw each frame of an animation individually. </p>
+
+### Draw your exhaust
+
+Drawing lots of yellow ellipses at different `y` positions creates an exhaust trail with a round bottom.
+ 
+--- task ---
+
+Update your `draw_rocket()` function to include a `for` loop that repeats the drawing of `25` exhaust ellipses. The **loop variable** `i` gets added to `rocket_y` to draw each ellipse further below the rocket. 
+
+--- code ---
+---
+language: python
+filename: main.py - draw_rocket()
+line_numbers: true
+line_number_start: 12
+line_highlights: 16-20
+---
+
+def draw_rocket():
+    global rocket_y   
+    rocket_y -= 1   
+
+    no_stroke()  # Turn off the stroke
+
+    for i in range(25):  # Draw 25 burning exhaust ellipses   
+        fill(255, 255, 0)  # Yellow   
+        ellipse(width/2, rocket_y + i, 8, 3)  # i increases each time the loop repeats    
+
+    image(rocket, width/2, rocket_y, 64, 64)
+
+
+--- /code ---
+
+--- /task ---
+
+A `for` loop repeats a piece of code once for every item it is given. 
+
+To run the code in a `for` loop a certain number of times, you can use the `range()` function. For example, `range(5)` creates a sequence of five numbers starting from 0, so [0, 1, 2, 3, 4].
+
+Each time the `for` loop repeats, it sets a variable to the current item so that you can use it in the loop. 
+
+--- task ---
+
+**Test:** Run your code to check the rocket has a new exhaust trail.
+
+![A close-up of the rocket with an exhaust trail.](images/rocket_exhaust.png){:width="300px"}
+
+--- /task ---
+
+### Add a gradient
+
+The `i` variable can also be used to create a colour gradient with less green in each ellipse that gets drawn.
+
+--- task ---
+
+Change the call to `fill()` to set the amount of green to `255 - i * 10` so that the first ellipse has equal amounts of red and green and the last ellipse has very little green.
+
+--- code ---
+---
+language: python
+filename: main.py - draw_rocket()
+line_numbers: true
+line_number_start: 18
+line_highlights: 19
+---
+
+    for i in range(25):   
+        fill(255, 255 - i * 10, 0)  # Reduce the amount of green    
+        ellipse(width/2, rocket_y + i, 8, 3)
+
+--- /code ---
+    
+--- /task ---
+
+--- task ---
+
+**Test:** Check that you get a trail of ellipses gradually changing from yellow to red. 
+
+--- /task ---
+
+### Create a smoke effect
+
+The smoke exhaust trail is created by drawing lots of slightly transparent grey ellipses at different positions in each frame. 
+
+![A slow animation of the smoke effect.](images/rocket_smoke.gif)
+
+--- task ---
+
+This time the `fill()` is outside the loop as the colour is the same for each smoke ellipse. The fourth input to `fill()` is the opacity, a low opacity value makes the colour more transparent so you can see the shapes underneath.
+
+In each frame of the animation, 20 ellipses of random sizes will be drawn at random positions. 
+
+--- code ---
+---
+language: python
+filename: main.py - draw_rocket()
+line_numbers: true
+line_number_start: 18
+line_highlights: 22-24
+---
+
+    for i in range(25):  
+        fill(255, 255 - i * 10, 0)   
+        ellipse(width/2, rocket_y + i, 8, 3)    
+
+    fill(200, 200, 200, 100)  # Transparent grey   
+    for i in range(20):  # Draw 20 random smoke ellipses    
+        ellipse(width/2 + randint(-5, 5), rocket_y + randint(20, 50), randint(5, 10), randint(5, 10))    
+    
+    image(rocket, width/2, rocket_y, 64, 64)
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your program and check the exhaust fumes are visible. 
+
+![An animation of the rocket and exhaust trail with added smoke.](images/rocket_exhaust_circles.gif)
+
+--- /task ---
+
+--- save ---
+
+## Burn fuel
+
+<div style="display: flex; flex-wrap: wrap">
+<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
+
+One of the most important things to decide when launching a rocket is how much fuel to load into it. 
+
+To do this, you need to simulate how much fuel will be burned on the journey.
+</div>
+
+![The program with a question in the output area asking how much fuel is required.](images/burn_question_full.png){:width="300px"}
+
+</div>
+
+### Create a fuel variable
+
+--- task ---
+
+Add a variable to keep track of how much fuel your rocket burns (in frames).
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 7 
+line_highlights: 10
+---
+
+# Setup global variables    
+screen_size = 400   
+rocket_y = screen_size  
+burn = 100  # How much fuel is burned in each frame
+
+--- /code ---
+
+--- /task ---
+
+
+--- task ---
+
+At the bottom of your program, add code to ask the user how much fuel to add to the rocket and store their answer in a `fuel` global variable. 
+
+--- code ---
+---
+language: python
+filename: main.py 
+line_numbers: true
+line_number_start: 51
+line_highlights: 51
+---
+
+fuel = int(input('How many kilograms of fuel do you want to use?'))   
+run()
+  
+--- /code ---
+
+--- /task ---
+
+### Check fuel against burn
+
+The rocket should only move if it hasn't burned all of its fuel.
+
+--- task ---
+
+Add code to the `draw_rocket()` function to reduce the remaining `fuel` by the `burn` of each frame. Use `print()` to show how much fuel is left in each frame.
+
+You need to say that you want to use the global `fuel` and `burn` variables.
+
+--- code ---
+---
+language: python
+filename: main.py — draw_rocket()
+line_numbers: true
+line_number_start: 15 
+line_highlights: 15, 17-18
+---
+
+    global rocket_y, fuel, burn   
+    rocket_y -= 1   
+    fuel -= burn  # Burn fuel   
+    print('Fuel left: ', fuel)   
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your program to check that the animation doesn't start until `How many kilograms of fuel do you want to use?` has been answered. Try entering `30000` as the amount of fuel.
+
+The rocket will keep going even if it has no fuel left. 
+
+![The program with a question in the output area asking how much fuel is required.](images/burn_question.png)
+
+--- /task ---
+
+--- task ---
+
+The rocket should only move if it has enough fuel left. Add an `if` statement to check that `fuel >= burn`.
+
+You will need to indent all of the lines of code before the `image()` function call. To do this, highlight all of the lines with the mouse and then tap the <kbd>Tab</kbd> on the keyboard to indent all the lines at once.
+
+The `image()` line doesn't need to be indented because you always want to draw the rocket.
+
+--- code ---
+---
+language: python
+filename: main.py — draw_rocket()
+line_numbers: true
+line_number_start: 15
+line_highlights: 17-30
+---
+
+    global rocket_y, fuel, burn  
+
+    if fuel >= burn:  # Still got fuel   
+        rocket_y -= 1   
+        fuel -= burn   
+        print('Fuel left: ', fuel)   
+        
+        no_stroke()  # Turn off the stroke   
+        
+        for i in range(25):   
+            fill(255, 255 - i*10, 0)   
+            ellipse(width/2, rocket_y + i, 8, 3)    
+        
+        fill(200, 200, 200, 100)   
+        for i in range(20):   
+            ellipse(width/2 + randint(-5, 5), rocket_y + randint(20, 50), randint(5, 10), randint(5, 10))   
+
+    image(rocket, width/2, rocket_y, 64, 64)
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your program to check that the rocket stops when there is no fuel left. 
+
+![Image of a rocket in the middle of the screen with the statement 'Fuel left: 0'.](images/burn_empty.png){:width="300px"}
+
+--- /task ---
+
+Did your rocket stop when it ran out of fuel? Well done, you sent a rocket to outer space!
+
+--- save ---
+
 ## Reaching orbit
 
 <div style="display: flex; flex-wrap: wrap">
