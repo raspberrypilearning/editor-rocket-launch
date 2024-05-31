@@ -12,7 +12,7 @@ Define a `draw_background()` function and set the background colour to black.
 language: python
 line_numbers: true
 line_number_start: 12 
-line_highlights: 23-24
+line_highlights: 13-14
 ---
 
 # The draw_background function goes here   
@@ -45,6 +45,6 @@ def draw():
 
 ### Tip
 
-The three numbers in `background(0, 0, 0)` are red, green and blue values. If you'd like your version of space to be a different colour, try changing these numbers to any whole number between 0-255.
+The three numbers in `background(0, 0, 0)` are red, green and blue values. If you'd like your version of space to be a different colour, try changing these numbers to any whole number between 0 and 255.
 
 </div>

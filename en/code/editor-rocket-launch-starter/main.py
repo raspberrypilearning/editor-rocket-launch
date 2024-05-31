@@ -18,11 +18,10 @@ def setup():
     size(screen_size, screen_size)
     global planet
     planet = load_image('planet.png')
-    image_mode(CENTER)
 
 def draw():
   # Things to do in every frame
-    
+
     
 
 
