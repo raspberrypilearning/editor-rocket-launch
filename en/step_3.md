@@ -1,3 +1,14 @@
+
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
+Click on the image icon to the left to view the image gallery. 
+
+If you want to use a different planet image, change `planet.png` in the code to a different filename, for example, `orange_planet.png`.
+
+</div>
+
 ## Liftoff!
 
 <div style="display: flex; flex-wrap: wrap">

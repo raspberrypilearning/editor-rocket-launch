@@ -40,6 +40,7 @@ def draw():
 --- /code ---
 </div>
 
+**Test:** Run your code and you should see a black square. 
 
 <div class="c-project-callout c-project-callout--tip">
 

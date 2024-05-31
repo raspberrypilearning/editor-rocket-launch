@@ -1,12 +1,15 @@
 <h2 class="c-project-heading--task">Draw a planet</h2>
 
 --- task ---
-Add code to display an image of a planet using the `image()` function:
+Add code to display an image of a planet using the `image()` function, which takes:
 
-`image(image filename, x-coordinate, y-coordinate, image_width, image_height)
-`
+- image filename
+- x coordinate
+- y coordinate
+- image width
+- image height
 
-Use `image_mode(CENTER)` so that the x,y coordinate is the centre of the image not the top left corner. 
+Use `image_mode(CENTER)` so that the x,y coordinate you provide is the centre of the image not the top left corner. 
 --- /task --- 
 
 <div class="c-project-code">
@@ -15,14 +18,12 @@ Use `image_mode(CENTER)` so that the x,y coordinate is the centre of the image n
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 18 
-line_highlights: 22-23
+line_number_start: 12 
+line_highlights: 14-15
 ---
-def setup():  
-    size(screen_size, screen_size)    
-    global planet
-    planet = load_image('planet.png') 
-    image(planet, width/2, height, 300, 300)
+def draw_background()):  
+    background(0,0,0)
+    image(planet, screen_size/2, screen_size, 300, 300)
     image_mode(CENTER)
 --- /code ---
 </div>
@@ -31,11 +32,9 @@ def setup():
 
 ### Tip
 
-Click on the image icon to the left to view the image gallery. 
+The x coordinate for the planet is `screen_size/2` to make the centre half way across the black square, horizontally. 
 
-If you want to use a different planet image, change `planet.png` in the code to a different filename, for example, `orange_planet.png`.
-
-The line of code `from p5 import *` gives you global `width` and `height` variables based on the size of the screen. 
+The y coordinate for the planet is `screen_size` to make the planet's centre right at the bottom of the black square.
 
 </div>
 
