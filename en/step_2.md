@@ -1,4 +1,9 @@
-## Set the scene
+<h2 class="c-project-heading--task">Set a background</h2>
+--- task ---
+Wording of task
+--- /task ---
+
+
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -11,69 +16,9 @@ The animation needs a space backdrop with a planet to launch the rocket from.
 </div>
 </div>
 
---- task ---
-
-Open the [project template](https://editor.raspberrypi.org/en/projects/rocket-launch-starter){:target="_blank"}.
-
-### Create the screen
-
---- /task ---
-
-You will use a `screen_size` variable to set the size of the screen and in calculations. Variables defined outside functions are **global** so you can use them anywhere in your program.
-
---- task ---
-
-Find the comment `Setup global variables` and add a line of code to create your `screen_size` variable:
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 7 
-line_highlights: 8
----
-
-# Setup global variables    
-screen_size = 400   
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-Use the `screen_size` variable to create a square 400 by 400 pixels:
-
---- code ---
----
-language: python
-filename: main.py — setup()
-line_numbers: true
-line_number_start: 18
-line_highlights: 20
----
-
-def setup():   
-    # Setup your animation here   
-    size(screen_size, screen_size)   
-  
-
---- /code ---
-
---- /task ---
 
 ### Choose an image
 
---- task ---
-
-The starter project has three different planet images and the moon provided for you. You can view these in the **Image gallery** on the left hand side of the code editor.
-
-![A screenshot of the code editor, with the image gallery highlighted containing images of planets and the moon.](images/image_gallery.png)
-
-**Choose:** Decide which image you want to use and make a note of the filename. For example, `orange_planet.png`.
-
---- /task ---
 
 --- task ---
 
@@ -103,8 +48,6 @@ def setup():
 --- /code ---
 
 --- /task ---
-
-### Draw background
 
 --- task ---
 

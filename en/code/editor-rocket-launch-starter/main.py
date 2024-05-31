@@ -4,8 +4,8 @@
 from p5 import *
 from random import randint
 
-# Setup global variables
-
+# Set up global variables
+screen_size = 400
 
 # The draw_rocket function goes here
 
@@ -16,7 +16,7 @@ from random import randint
 
 
 def setup():
-  # Setup your animation here
+  size(screen_size, screen_size)
   
 
 
