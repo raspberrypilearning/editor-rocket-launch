@@ -3,14 +3,13 @@
 --- task ---
 Create a black background which will represent space.
 
-Define a `draw_background()` function. 
+Define a `draw_background()` function and use `background(0, 0, 0)` to set the background colour to black.
+--- /task --- 
 
-Use `background(0, 0, 0)` to set the background colour to black.
-
+<div class="c-project-code">
 --- code ---
 ---
 language: python
-filename: main.py — draw_background()
 line_numbers: true
 line_number_start: 12 
 line_highlights: 23-24
@@ -21,14 +20,14 @@ def draw_background():
     background(0, 0, 0)    
   
 --- /code ---
+</div>
 
 Call your new function inside the `draw()` function which has been made for you:
 
-
+<div class="c-project-code">
 --- code ---
 ---
 language: python
-filename: main.py — draw_background()
 line_numbers: true
 line_number_start: 23 
 line_highlights: 25
@@ -37,6 +36,4 @@ line_highlights: 25
 draw_background() 
   
 --- /code ---
-
-
---- /task --- 
+</div>
