@@ -1,7 +1,9 @@
-<h2 class="c-project-heading--task">Add a planet</h2>
+<h2 class="c-project-heading--task">A different planet?</h2>
 
 --- task ---
 Click on the image icon to the left to view the image gallery. 
+
+![Choose a different planet](images/image_gallery.png)
 
 If you want to change the planet image, change `planet.png` in the code to the filename of your chosen planet, for example, `orange_planet.png`. 
 --- /task --- 
@@ -21,4 +23,5 @@ def setup():
     planet = load_image('planet.png')
 --- /code ---
 </div>
+
 

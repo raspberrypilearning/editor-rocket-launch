@@ -1,27 +1,14 @@
-
-
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Each time a new frame is drawn, the rocket needs to move up the screen to create an animation effect.
-</div>
-<div>
-
-![A rocket flying at a steady speed from the bottom to the top of the screen.](images/fly.gif){:width="300px"}
-
-</div>
-</div>
+<h2 class="c-project-heading--task">Add a rocket</h2>
 
 --- task ---
-
 The starter project has a rocket image provided for you. 
 
 ![Image of the rocket in the code editor image gallery.](images/rocket_image.png)
 
---- /task ---
-
---- task ---
-
 Add code to the `setup()` function to load the rocket image into a `rocket` global variable. 
+--- /task --- 
+
+<div class="c-project-code">
 
 --- code ---
 ---
@@ -41,8 +28,23 @@ def setup():
     rocket = load_image('rocket.png')    
 
 --- /code ---
+</div>
 
---- /task ---
+
+
+
+<div style="display: flex; flex-wrap: wrap">
+<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
+Each time a new frame is drawn, the rocket needs to move up the screen to create an animation effect.
+</div>
+<div>
+
+![A rocket flying at a steady speed from the bottom to the top of the screen.](images/fly.gif){:width="300px"}
+
+</div>
+</div>
+
+
 
 ### Make the rocket fly
 

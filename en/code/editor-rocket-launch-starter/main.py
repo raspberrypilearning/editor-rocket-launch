@@ -16,8 +16,10 @@ screen_size = 400
 def setup():
     # Set up your animation here
     size(screen_size, screen_size)
+    image_mode(CENTER)
     global planet
     planet = load_image('planet.png')
+   
 
 def draw():
     # Things to do in every frame
