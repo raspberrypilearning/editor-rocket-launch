@@ -2,7 +2,7 @@
 from p5 import *
 from random import randint
 
-# Set up global variables
+# Setup global variables
 screen_size = 400
 
 # The draw_rocket function goes here
@@ -14,14 +14,16 @@ screen_size = 400
 
 
 def setup():
-  size(screen_size, screen_size)
-  
-
+  # Setup your animation here
+    size(screen_size, screen_size)
+    global planet
+    planet = load_image('planet.png')
+    image_mode(CENTER)
 
 def draw():
   # Things to do in every frame
-  
-
+    
+    
 
 
 run()

@@ -1,29 +1,42 @@
 <h2 class="c-project-heading--task">Draw the background</h2>
 
 --- task ---
-Add some code to draw a planet on the background.
+Create a black background which will represent space.
+
+Define a `draw_background()` function. 
+
+Use `background(0, 0, 0)` to set the background colour to black.
 
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py — draw_background()
 line_numbers: true
-line_number_start: 18 
-line_highlights: 20
+line_number_start: 12 
+line_highlights: 23-24
 ---
-def setup():  
-    size(screen_size, screen_size)    
-    planet = load_image('planet.png') 
+
+# The draw_background function goes here   
+def draw_background():   
+    background(0, 0, 0)    
+  
 --- /code ---
---- /task ---
+
+Call your new function inside the `draw()` function which has been made for you:
 
 
-<div class="c-project-callout c-project-callout--tip">
+--- code ---
+---
+language: python
+filename: main.py — draw_background()
+line_numbers: true
+line_number_start: 23 
+line_highlights: 25
+---
 
-### Tip
+draw_background() 
+  
+--- /code ---
 
-Click on the image icon to the left to view the image gallery. 
 
-If you want to use a different planet image, change `planet.png` in the code to a different filename, for example, `orange_planet.png`.
-
-</div>
+--- /task --- 
