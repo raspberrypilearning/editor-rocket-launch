@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">Draw a planet</h2>
+<h2 class="c-project-heading--task">Add a planet</h2>
 
 --- task ---
 Add code to display an image of a planet using the `image()` function, which takes:
@@ -16,10 +16,9 @@ Use `image_mode(CENTER)` so that the x,y coordinate you provide is the centre of
 --- code ---
 ---
 language: python
-filename: main.py
 line_numbers: true
-line_number_start: 12 
-line_highlights: 14-15
+line_number_start: 13 
+line_highlights: 15-16
 ---
 def draw_background()):  
     background(0,0,0)
@@ -32,9 +31,9 @@ def draw_background()):
 
 ### Tip
 
-The x coordinate for the planet is `screen_size/2` to make the centre half way across the black square, horizontally. 
+The x coordinate for the planet is `screen_size/2` to position the centre of the planet half way across the black square, horizontally. 
 
-The y coordinate for the planet is `screen_size` to make the planet's centre right at the bottom of the black square.
+The y coordinate for the planet is `screen_size` to position the centre of the planet right at the bottom of the black square.
 
 </div>
 
