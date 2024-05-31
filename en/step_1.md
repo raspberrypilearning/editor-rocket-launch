@@ -48,11 +48,3 @@ def draw():
 The three numbers in `background(0, 0, 0)` are red, green and blue values. If you'd like your version of space to be a different colour, try changing these numbers to any whole number between 0-255.
 
 </div>
-
-<div class="c-project callout c-project-callout--tip">
-
-### Tip
-
-The three numbers in `background(0, 0, 0)` are red, green and blue values. If you'd like your version of space to be a different colour, try changing these numbers to any whole number between 0-255.
-
-</div>
