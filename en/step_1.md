@@ -45,8 +45,7 @@ def draw():
 
 ### Tip
 
-When you type an opening bracket `(`{:.language-python} the code editor will automatically add a closing bracket `)`{:.language-python} 
-This also happens when you type an opening apostrophe `'`{:.language-python}.
+The three numbers in `background(0, 0, 0)` are red, green and blue values. If you'd like your version of space to be a different colour, try changing these numbers to any whole number between 0-255.
 
 </div>
 
