@@ -1,7 +1,7 @@
 <h2 class="c-project-heading--task">Draw the background</h2>
 
 --- task ---
-Add some code to load the image of the planet
+Add some code to draw a planet on the background.
 
 --- code ---
 ---
