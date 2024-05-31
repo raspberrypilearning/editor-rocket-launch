@@ -3,7 +3,7 @@
 --- task ---
 Create a black background which will represent space.
 
-Define a `draw_background()` function and use `background(0, 0, 0)` to set the background colour to black.
+Define a `draw_background()` function and set the background colour to black.
 --- /task --- 
 
 <div class="c-project-code">
@@ -22,7 +22,7 @@ def draw_background():
 --- /code ---
 </div>
 
-Call your new function inside the `draw()` function which has been made for you:
+Call this function inside the `draw()` function:
 
 <div class="c-project-code">
 --- code ---
@@ -33,7 +33,15 @@ line_number_start: 23
 line_highlights: 25
 ---
 
-draw_background() 
+def draw():
+    # Things to do in every frame
+    draw_background() 
   
 --- /code ---
+</div>
+
+<div class="c-project callout c-project-callout--tip">
+### Tip
+
+The three numbers in `background(0, 0, 0)` are red, green and blue values. If you'd like your version of space to be a different colour, try changing these numbers to anything between 0-255.
 </div>
