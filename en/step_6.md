@@ -22,7 +22,7 @@ line_highlights: 11
 # The draw_rocket function goes here   
 def draw_rocket():   
     global rocket_position     
-    rrocket_position = rocket_position - 1    
+    rocket_position = rocket_position - 1    
     image(rocket, width/2, rocket_position, 64, 64)    
 --- /code ---
 </div>
@@ -31,4 +31,3 @@ def draw_rocket():
 
 ![Animation of the rocket flying half way up the screen.](images/rocket_fly.gif)
 
---- /task ---

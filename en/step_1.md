@@ -2,9 +2,9 @@
 
 --- task ---
 Create a black background which will represent space.
+--- /task --- 
 
 Define a `draw_background()` function and set the background colour to black.
---- /task --- 
 
 <div class="c-project-code">
 --- code ---
@@ -22,7 +22,7 @@ def draw_background():
 --- /code ---
 </div>
 
-Call this function inside the `draw()` function:
+Add this function to the list of things to `draw()` in every frame.
 
 <div class="c-project-code">
 --- code ---
