@@ -8,32 +8,44 @@ The rocket will look more realistic with some special effects to simulate the ex
 
 --- /task ---
 
-In each frame of the animation, draw 20 ellipses of random sizes at random positions. 
+Set the fill colour for the smoke to transparent grey. 
 
 --- code ---
 ---
 language: python
-filename: main.py - draw_rocket()
-line_numbers: true
-line_number_start: 18
-line_highlights: 22-24
+line_numbers: false
+line_number_start: 1
+line_highlights: 5
 ---
 
-    for i in range(25):  
-        fill(255, 255 - i * 10, 0)   
-        ellipse(width/2, rocket_y + i, 8, 3)    
-
-    fill(200, 200, 200, 100)  # Transparent grey   
-    for i in range(20):  # Draw 20 random smoke ellipses    
-        ellipse(width/2 + randint(-5, 5), rocket_y + randint(20, 50), randint(5, 10), randint(5, 10))    
+def draw_rocket():
+    global rocket_position
+    rocket_position = rocket_position - 1
+    image(rocket, width/2, rocket_position, 64, 64)
+    fill(200, 200, 200, 100) 
     
-    image(rocket, width/2, rocket_y, 64, 64)
 
 --- /code ---
 
 
+Generate a random number between 5 and 10 for the size of the circle, then draw it at the bottom of the rocket.
+
+--- code ---
+---
+language: python
+line_numbers: false
+line_number_start: 1
+line_highlights: 2-3
+---
+
+fill(200, 200, 200, 100) 
+circle_size = randint(5,10) 
+ellipse(screen_size/2, rocket_position, circle_size, circle_size)   
+
+--- /code ---
+   
 
 
-**Test:** Run your program and you should see exhaust fumes. 
+**Test:** Run your program and you should see a grey circle appear at the bottom of the rocket. 
 
 

@@ -38,8 +38,8 @@ Define the `draw_rocket()` function.
 ---
 language: python
 line_numbers: true
-line_number_start: 8 
-line_highlights: 9-11 
+line_number_start: 9 
+line_highlights: 10-12 
 ---
 
 # The draw_rocket function goes here   
@@ -60,7 +60,7 @@ Call the `draw_rocket()` function.
 language: python
 line_numbers: true
 line_number_start: 28 
-line_highlights: 31 
+line_highlights: 33 
 ---
 
 def draw():

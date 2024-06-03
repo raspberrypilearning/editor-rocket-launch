@@ -27,7 +27,5 @@ def draw_rocket():
 --- /code ---
 </div>
 
-**Test:** Run your code to check that the rocket starts at the bottom of the screen and moves up each frame.
-
-![Animation of the rocket flying half way up the screen.](images/rocket_fly.gif)
+**Test:** Run your code to check that the rocket blasts off from the bottom of the screen.
 

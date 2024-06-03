@@ -14,7 +14,7 @@ If you want to change the planet image, change `planet.png` in the code to the f
 language: python
 line_numbers: true
 line_number_start: 18 
-line_highlights: 22
+line_highlights: 23
 ---
 def setup():
     # Set up your animation here
