@@ -13,9 +13,9 @@ Set the fill colour for the smoke to transparent grey.
 --- code ---
 ---
 language: python
-line_numbers: false
-line_number_start: 1
-line_highlights: 5
+line_numbers: true
+line_number_start: 10
+line_highlights: 14
 ---
 
 def draw_rocket():
@@ -33,9 +33,9 @@ Generate a random number between 5 and 10 for the size of the circle, then draw 
 --- code ---
 ---
 language: python
-line_numbers: false
-line_number_start: 1
-line_highlights: 2-3
+line_numbers: true
+line_number_start: 14
+line_highlights: 15-16
 ---
 
 fill(200, 200, 200, 100) 
