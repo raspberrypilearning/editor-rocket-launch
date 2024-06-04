@@ -49,3 +49,9 @@ ellipse(screen_size/2, rocket_position, circle_size, circle_size)
 **Test:** Run your program and you should see a grey circle appear at the bottom of the rocket. 
 
 
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
+The function which draws the circle is called `ellipse` as it can also draw ovals too. Setting both the width and height to the same value (`circle_size`) draws a circle. 
+</div>
