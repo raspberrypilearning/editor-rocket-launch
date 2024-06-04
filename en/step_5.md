@@ -60,7 +60,7 @@ Call the `draw_rocket()` function.
 language: python
 line_numbers: true
 line_number_start: 28 
-line_highlights: 33 
+line_highlights: 31 
 ---
 
 def draw():
