@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">Lots of circles</h2>
+<h2 class="c-project-heading--task">Random circles</h2>
 
 --- task ---
 
