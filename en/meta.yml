@@ -22,5 +22,5 @@ steps:
   - title: Remove the outline
     completion:
       - external
-
+  - title: What next?
   
