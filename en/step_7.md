@@ -40,7 +40,12 @@ line_highlights: 15-16
 
 fill(200, 200, 200, 100) 
 circle_size = randint(5,10) 
-ellipse(screen_size/2, rocket_position, circle_size, circle_size)   
+ellipse(
+    screen_size/2, 
+    rocket_position, 
+    circle_size, 
+    circle_size
+)   
 
 --- /code ---
    
