@@ -17,7 +17,8 @@ steps:
       - internal
   - title: Blast off
   - title: Exhaust effects
-  - title: Something else
+  - title: Lots of circles
+  - title: Remove the outline
   - title: Quick quiz
     knowledge_quiz:
       path: quiz1
