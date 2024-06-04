@@ -42,26 +42,4 @@ def draw_rocket():
 The `ellipse()` function call is written over multiple lines to make it easier to read. 
 </div>
 
-
-
-Generate a random number and add it to the x and y position of each circle so they aren't all drawn in the same place.
-
---- code ---
----
-language: python
-line_numbers: true
-line_number_start: 16
-line_highlights: 17-18
----
-
-ellipse(
-    screen_size/2 + randint(-5,5), 
-    rocket_position + randint(20,50), 
-    circle_size, 
-    circle_size
-)   
-
---- /code ---
-   
-
-**Test:** Run your program and you should see lots of grey circles appear at the bottom of the rocket. 
+**Test:** Run your program. You will still see a flashing grey circle at the bottom of the rocket - all of the circles have been drawn on top of each other! 

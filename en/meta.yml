@@ -18,6 +18,7 @@ steps:
   - title: Blast off
   - title: Exhaust effects
   - title: Lots of circles
+  - title: Random circles
   - title: Remove the outline
   - title: Quick quiz
     knowledge_quiz:
