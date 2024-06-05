@@ -1,11 +1,11 @@
 <h2 class="c-project-heading--task">Draw the background</h2>
 
 --- task ---
-Create a black background which will represent space.
+➡️ Create a black background which will represent space.
 --- /task --- 
 
-✅ Define a `draw_background()` function.
-✅ Set the background colour to black.
+Define a `draw_background()` function.
+Set the background colour to black.
 
 <div class="c-project-code">
 --- code ---
