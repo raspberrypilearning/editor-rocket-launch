@@ -2,7 +2,7 @@
 
 --- task ---
 
-✅ Generate the circles in random places instead of on top of each other. 
+➡️ Generate the circles in random places instead of on top of each other. 
 
 --- /task ---
 

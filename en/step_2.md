@@ -2,7 +2,9 @@
 
 --- task ---
 
-✅ Add code to display an image of a planet using the `image()` function, which takes:
+➡️ Display an image of a planet.
+
+The `image()` function needs the following data:
 
 - image filename
 - x coordinate

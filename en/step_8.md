@@ -2,7 +2,7 @@
 
 --- task ---
 
-✅ Add a loop to draw multiple circles, to make the exhaust
+➡️ Add a loop to draw multiple circles, to make the exhaust
 effect even better.
 
 --- /task ---

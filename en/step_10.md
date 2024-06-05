@@ -2,7 +2,7 @@
 
 --- task ---
 
-✅ Remove the outline of the circles to make them look more realistic.
+➡️ Remove the outline of the circles to make them look more realistic.
 
 --- /task ---
 

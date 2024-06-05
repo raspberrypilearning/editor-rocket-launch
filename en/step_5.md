@@ -1,13 +1,11 @@
 <h2 class="c-project-heading--task">Draw the rocket</h2>
 
 --- task ---
-✅ Add a `rocket_position` global variable to keep track of the rocket's `y` position. 
-
-✅ Define a `draw_rocket()` function to make the rocket appear on the screen.
-
-✅ Call the `draw_rocket()` function.
+➡️ Make the rocket appear on the screen
 
 --- /task --- 
+
+Add a `rocket_position` global variable to keep track of the rocket's `y` position. 
 
 <div class="c-project-code">
 --- code ---
@@ -34,7 +32,7 @@ The `rocket_position` is set to the `screen_size` at the start so that the rocke
 
 </div>
 
-Define the `draw_rocket()` function.
+Define a `draw_rocket()` function to make the rocket appear on the screen.
 
 <div class="c-project-code">
 --- code ---
