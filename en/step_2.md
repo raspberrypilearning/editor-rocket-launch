@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Add a planet</h2>
 
 --- task ---
-Add code to display an image of a planet using the `image()` function, which takes:
+
+✅ Add code to display an image of a planet using the `image()` function, which takes:
 
 - image filename
 - x coordinate

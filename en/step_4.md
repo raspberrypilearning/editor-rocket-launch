@@ -5,7 +5,7 @@ The starter project has a rocket image provided for you.
 
 ![Image of the rocket in the code editor image gallery.](images/rocket_image.png)
 
-Add code to the `setup()` function to load the rocket image into a `rocket` global variable. 
+ ✅ Add code to the `setup()` function to load the rocket image into a `rocket` global variable. 
 --- /task --- 
 
 <div class="c-project-code">

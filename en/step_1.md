@@ -4,7 +4,8 @@
 Create a black background which will represent space.
 --- /task --- 
 
-Define a `draw_background()` function and set the background colour to black.
+✅ Define a `draw_background()` function.
+✅ Set the background colour to black.
 
 <div class="c-project-code">
 --- code ---

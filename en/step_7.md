@@ -6,6 +6,12 @@ The rocket will look more realistic with some special effects to simulate the ex
 
 ![A slow animation of the smoke effect.](images/rocket_smoke.gif)
 
+✅ Set the fill colour to grey.
+
+✅ Generate a random number between 5 and 10.
+
+✅ Draw a circle the size of the random number.
+
 --- /task ---
 
 Set the fill colour for the smoke to transparent grey. 
