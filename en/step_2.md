@@ -4,6 +4,8 @@
 
 ➡️ Display an image of a planet.
 
+--- /task --- 
+
 The `image()` function needs the following data:
 
 - image filename
@@ -11,8 +13,6 @@ The `image()` function needs the following data:
 - y coordinate
 - image width
 - image height
-
---- /task --- 
 
 <div class="c-project-code">
 --- code ---
