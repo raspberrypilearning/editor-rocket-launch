@@ -2,7 +2,9 @@
 
 --- task ---
 
-We’d love to hear your thoughts about using the Code editor to complete the Hello World project! Please complete our [feedback form](https://form.raspberrypi.org/4873648) to let us know.
+We’d love to hear your thoughts about using the Code editor to complete the Hello World project! 
+
+➡️ Please complete our [feedback form](https://form.raspberrypi.org/4873648) to let us know.
 
 ### What next?
 
