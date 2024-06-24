@@ -13,12 +13,12 @@ steps:
   - title: A different planet?
   - title: Load the rocket image
   - title: Draw the rocket
-    completion:
-      - internal
   - title: Blast off
   - title: Exhaust effects
   - title: Lots of circles
   - title: Random circles
+    completion:
+      - internal
   - title: Remove the outline
     completion:
       - external
