@@ -1,6 +1,8 @@
-title: default-project-template
+title: Rocket Launch
 hero_image: images/banner.png
-description: default-project-template description
+description: Make an animation of a rocket
+meta_title: Python coding projects for kids and teens | Rocket launch
+meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Make a Python animation that shows a rocket launching into orbit.
 version: 4
 listed: false
 copyedit: false
