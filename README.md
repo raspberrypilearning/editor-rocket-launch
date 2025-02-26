@@ -1,11 +1,11 @@
-# default-project-template
+# Rocket launch
 
-![default-project-template](banner.png)
+![Rocket launch](/en/images/banner.png)
 
-Find the project online at [projects.raspberrypi.org/en/projects/default-project-template](https://projects.raspberrypi.org/en/projects/default-project-template)
+Find the project online at [projects.raspberrypi.org/en/projects/editor-rocket-launch](https://projects.raspberrypi.org/en/projects/editor-rocket-launch)
 
 ## Resources
-For project materials and solutions, see [en/resources](https://github.com/raspberrypilearning/default-project-template/tree/master/en/resources) and [en/solutions](https://github.com/raspberrypilearning/default-project-template/tree/master/en/solutions).
+For project materials and solutions, see [en/resources](https://github.com/raspberrypilearning/editor-rocket-launch/tree/master/en/resources) and [en/solutions](https://github.com/raspberrypilearning/editor-rocket-launch/tree/master/en/solutions).
 
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md)
