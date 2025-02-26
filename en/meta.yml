@@ -6,23 +6,21 @@ listed: false
 copyedit: false
 last_tested: "2022-05-19"
 steps:
-  - title: You will make
-  - title: Set the scene
-  - title: Liftoff!
+  - title: Draw the background
+  - title: Add a planet
     completion:
       - engaged
+  - title: A different planet?
+  - title: Load the rocket image
+  - title: Draw the rocket
+  - title: Blast off
   - title: Exhaust effects
-  - title: Burn fuel
-  - title: Reaching orbit
+  - title: Lots of circles
+  - title: Random circles
     completion:
       - internal
-  - title: Quick quiz
-    knowledge_quiz:
-      path: quiz1
-      version: 1
-      questions: 3
-      passing_score: 3
+  - title: Remove the outline
     completion:
       - external
-  - title: Upgrade your project
   - title: What next?
+  

@@ -1,22 +1,45 @@
-## Upgrade your project
-Your project is complete, but you can still make it better if you want. Here are a few upgrades to consider:
+<h2 class="c-project-heading--task">Lots of circles</h2>
 
- + Let the user set the rate at which the rocket burns fuel or how far the rocket flies in each frame.
- + Add a second, higher, orbit for the rocket to reach and drop off another satellite. Have it change colour again when it gets there. 
+--- task ---
 
-Here's a version of the project with all those upgrades, so you can see how they could work. Click Run to launch the rocket:
+➡️ Add a loop to draw multiple circles, to make the exhaust
+effect even better.
 
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-upgrade" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
-You can view the [completed upgrade project here](https://editor.raspberrypi.org/en/projects/rocket-launch-upgrade){:target="_blank"}.
+--- /task ---
 
---- collapse ---
+Indent the code you used to draw the circle, and add a loop which will run the code 20 times.
+
+--- code ---
 ---
-title: Completed project
+language: python
+line_numbers: true
+line_number_start: 10
+line_highlights: 15-22
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/en/projects/rocket-launch-example){:target="_blank"}.
+def draw_rocket():
+    global rocket_position
+    rocket_position = rocket_position - 1
+    image(rocket, width/2, rocket_position, 64, 64)
+    fill(200, 200, 200, 100) 
+    for i in range(20):
+        circle_size = randint(5,10)
+        ellipse(
+            screen_size/2, 
+            rocket_position, 
+            circle_size,    
+            circle_size
+        )
+    
 
---- /collapse ---
+--- /code ---
 
---- save ---
+
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
+The `ellipse()` function call is written over multiple lines to make it easier to read. 
+</div>
+
+**Test:** Run your program. You will still see a flashing grey circle at the bottom of the rocket - all of the circles have been drawn on top of each other! 

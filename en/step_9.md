@@ -1,18 +1,29 @@
-## What next?
+<h2 class="c-project-heading--task">Random circles</h2>
 
-If you are following the [Introduction to Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pathway, you can move on to the [Make a face](https://projects.raspberrypi.org/en/projects/make-a-face) project. In this project, you will draw a face or mask using geometric shapes.
+--- task ---
 
---- print-only ---
+➡️ Generate the circles in random places instead of on top of each other. 
 
-![Make a face project](images/make-a-face-project.png)
+--- /task ---
 
---- /print-only ---
+Generate a random number and add it to the x and y position of each circle so they aren't all drawn in the same place.
 
---- no-print ---
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 16
+line_highlights: 17-18
+---
 
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/fruit-face-example" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
+ellipse(
+    screen_size/2 + randint(-5,5), 
+    rocket_position + randint(20,50), 
+    circle_size, 
+    circle_size
+)   
 
---- /no-print ---
+--- /code ---
+   
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+**Test:** Run your program and you should see lots of grey circles in random places at the bottom of the rocket. 
