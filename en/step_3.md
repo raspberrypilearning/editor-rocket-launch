@@ -6,49 +6,54 @@
 
 --- /task --- 
 
-The `image()` function needs the following data:
+The `image()` function needs the following:
 
-- image filename
-- x coordinate
-- y coordinate
-- image width
-- image height
++ image filename
++ x coordinate
++ y coordinate
++ image width
++ image height
+
+--- task ---
+
+Change the size and position of the planet by editing the numbers in the code.
+
+--- /task ---
 
 <div class="c-project-code">
 --- code ---
 ---
 language: python
 line_numbers: true
-line_number_start: 13 
-line_highlights: 15-16
+line_number_start: 12 
+line_highlights: 15
 ---
-def draw_background():  
-    background(0,0,0)
-    image(planet, screen_size/2, screen_size, 300, 300)
+def draw():
+    # Make your animation here
+    background(0, 0, 0)
+    image(planet, width/2, 400, 300, 300)
 --- /code ---
+
+--- test ---
+
+**Test:** Run your code and check that it draws a black background with half a planet at the bottom.
+
+--- /test ---
+
 </div>
 
+
+<div class="c-project-output">
+![A planet against a black background.](images/step_2.png){:width="300px"}
+</div>
 
 <div class="c-project-callout c-project-callout--tip">
 
 ### Tip
 
-The code `image_mode(CENTER)` in the `setup()` function means the x,y coordinate you provide is the centre of the image not the top left corner. 
-
-The x coordinate for the planet is `screen_size/2` to position the centre of the planet half way across the black square, horizontally. 
-
-The y coordinate for the planet is `screen_size` to position the centre of the planet right at the bottom of the black square.
+The code `width` is the width of the screen and `width/2` will be half this, at the centre of the screen. 
 
 </div>
-
-**Test:** Run your code and check that it draws a black background with half a planet at the bottom.
-
-![A planet against a black background.](images/step_2.png){:width="300px"}
-
-
-
-
-
 
 
 

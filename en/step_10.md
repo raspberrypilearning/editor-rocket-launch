@@ -6,24 +6,35 @@
 
 --- /task ---
 
-Generate a random number and add it to the x and y position of each circle so they aren't all drawn in the same place.
+Generate a random number in the x and y position of each circle so they aren't all drawn in the same place.
 
+<div class="c-project-code">
 --- code ---
 ---
 language: python
 line_numbers: true
-line_number_start: 16
-line_highlights: 17-18
+line_number_start: 23
+line_highlights: 29
 ---
-
-ellipse(
-    screen_size/2 + randint(-5,5), 
-    rocket_position + randint(20,50), 
-    circle_size, 
-    circle_size
-)   
+    # Rocket 
+    rocket_position = rocket_position - 1    
+    image(rocket, width/2, rocket_position, 64, 64)     
+    stroke(0)
+    fill(200, 200, 200, 100) 
+    for i in range(20):
+        ellipse(width/2 + randint(-5,5), rocket_position + randint(20,50), randint(5,10))    
 
 --- /code ---
    
+--- task ---
 
 **Test:** Run your program and you should see lots of grey circles in random places at the bottom of the rocket. 
+
+Change the `randint()` number ranges in your code to make your smoke how you want it.
+
+--- /task ---
+</div>
+
+<div class="c-project-output">
+![A slow animation of the smoke effect.](images/rocket_lotscircles.png)
+</div>

@@ -2,44 +2,38 @@
 
 --- task ---
 
-➡️ Add a loop to draw multiple circles, to make the exhaust
-effect even better.
+Add a loop to draw multiple circles, to make the exhaust effect even better.
 
 --- /task ---
 
-Indent the code you used to draw the circle, and add a loop which will run the code 20 times.
+Add a loop which will run the code 20 times. Indent the `ellipse()` so that it is in the loop.
 
+<div class="c-project-code">
 --- code ---
 ---
 language: python
 line_numbers: true
-line_number_start: 10
-line_highlights: 15-22
+line_number_start: 23
+line_highlights: 28-29
 ---
-
-def draw_rocket():
-    global rocket_position
-    rocket_position = rocket_position - 1
-    image(rocket, width/2, rocket_position, 64, 64)
+    # Rocket 
+    rocket_position = rocket_position - 1    
+    image(rocket, width/2, rocket_position, 64, 64)     
+    stroke(0)
     fill(200, 200, 200, 100) 
     for i in range(20):
-        circle_size = randint(5,10)
-        ellipse(
-            screen_size/2, 
-            rocket_position, 
-            circle_size,    
-            circle_size
-        )
-    
+        ellipse(width/2, rocket_position, randint(5,10))    
 
 --- /code ---
 
-
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-
-The `ellipse()` function call is written over multiple lines to make it easier to read. 
-</div>
+--- task ---
 
 **Test:** Run your program. You will still see a flashing grey circle at the bottom of the rocket - all of the circles have been drawn on top of each other! 
+
+--- /task ---
+</div>
+
+<div class="c-project-output">
+![Lots of small circles at the bottom of the rocket](images/rocket_circles.png)
+</div>
+

@@ -1,81 +1,52 @@
 <h2 class="c-project-heading--task">Draw the rocket</h2>
 
 --- task ---
-➡️ Make the rocket appear on the screen
+
+Add another `image()` function to make the rocket appear on the screen.
+
+Add the variable `rocket_position` to start at 400 (the screen height) and use `rocket_position` as the rocket `image` y coordinate.
 
 --- /task --- 
 
-Add a `rocket_position` global variable to keep track of the rocket's `y` position. 
 
 <div class="c-project-code">
 --- code ---
 ---
 language: python
 line_numbers: true
-line_number_start: 6 
-line_highlights: 8
+line_number_start: 1
+line_highlights: 5, 20 
 ---
+from p5 import *
+from random import randint
 
-# Setup global variables    
-screen_size = 400    
-rocket_position = screen_size  
+# Define variables
+rocket_position = 400
 
---- /code ---
-</div>
-
-
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-
-The `rocket_position` is set to the `screen_size` at the start so that the rocket appears right at the bottom edge of the screen. 
-
-</div>
-
-Define a `draw_rocket()` function to make the rocket appear on the screen.
-
-<div class="c-project-code">
---- code ---
----
-language: python
-line_numbers: true
-line_number_start: 9 
-line_highlights: 10-12 
----
-
-# The draw_rocket function goes here   
-def draw_rocket():   
-    global rocket_position      
-    image(rocket, width/2, rocket_position, 64, 64)    
-
-
---- /code ---
-</div>
-
-Call the `draw_rocket()` function.
-
-
-<div class="c-project-code">
---- code ---
----
-language: python
-line_numbers: true
-line_number_start: 28 
-line_highlights: 31 
----
+def setup():
+    # Set up your animation here
+    size(400, 400)
+    image_mode(CENTER)
+    global planet, rocket
+    planet = load_image('planet.png')
+    rocket = load_image('rocket.png')
 
 def draw():
-    # Things to do in every frame
-    draw_background()
-    draw_rocket() 
-
+    # Make your animation here
+    background(0, 0, 0)
+    image(planet, width/2, 400, 300, 300)
+    image(rocket, width/2, rocket_position, 64, 64)    
 
 --- /code ---
+
+--- task ---
+
+**Test:** Run your code and check that the rocket appears.
+
+Move your rocket and change it to the size you want by editing the code.
+
+--- /task ---
+
 </div>
-
-**Test:** Run your code and check that the rocket appears at the bottom of the image. 
-
-
-
 
 

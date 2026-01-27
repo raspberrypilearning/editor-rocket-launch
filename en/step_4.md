@@ -4,26 +4,35 @@
 ➡️ Choose a different planet image.
 --- /task --- 
 
-Click on the image icon to the left to view the image gallery. 
+--- task ---
+
+Click on the image icon to view the image gallery. 
+
+--- /task ---
 
 ![Choose a different planet](images/image_gallery.png)
 
-If you want to change the planet image, change `planet.png` in the code to the filename of your chosen planet, for example, `orange_planet.png`. 
+--- task ---
+
+Change the planet image in the code to the filename of your chosen planet, for example, `orange_planet.png`. 
+
+--- /task ---
 
 <div class="c-project-code">
 --- code ---
 ---
 language: python
 line_numbers: true
-line_number_start: 18 
-line_highlights: 23
+line_number_start: 4
+line_highlights: 9
 ---
 def setup():
     # Set up your animation here
-    size(screen_size, screen_size)
+    size(400, 400)
     image_mode(CENTER)
-    global planet
+    global planet, rocket
     planet = load_image('planet.png')
+    rocket = load_image('rocket.png')
 --- /code ---
 </div>
 

@@ -1,7 +1,7 @@
 <h2 class="c-project-heading--task">What you will make</h2>
 
 --- task ---
-Make a blast with this rocket launcher animation! 
+Make a blast with this rocket launch animation! 
 --- /task --- 
 
 <div class="c-project-output">
