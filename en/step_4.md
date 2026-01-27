@@ -1,44 +1,30 @@
-<h2 class="c-project-heading--task">Load the rocket image</h2>
+<h2 class="c-project-heading--task">A different planet?</h2>
 
 --- task ---
-The starter project has a rocket image provided for you. 
-
-![Image of the rocket in the code editor image gallery.](images/rocket_image.png)
-
-➡️ Load the rocket image
+➡️ Choose a different planet image.
 --- /task --- 
 
-Add code to the `setup()` function to load the rocket image into a `rocket` global variable. 
+Click on the image icon to the left to view the image gallery. 
+
+![Choose a different planet](images/image_gallery.png)
+
+If you want to change the planet image, change `planet.png` in the code to the filename of your chosen planet, for example, `orange_planet.png`. 
 
 <div class="c-project-code">
-
 --- code ---
 ---
 language: python
-filename: main.py
 line_numbers: true
-line_number_start: 18
-line_highlights: 22, 24
+line_number_start: 18 
+line_highlights: 23
 ---
-
-def setup():   
-    # Set up your animation here   
-    size(screen_size, screen_size)   
-    image_mode(CENTER)   
-    global planet, rocket   
-    planet = load_image('planet.png')    
-    rocket = load_image('rocket.png')    
-
+def setup():
+    # Set up your animation here
+    size(screen_size, screen_size)
+    image_mode(CENTER)
+    global planet
+    planet = load_image('planet.png')
 --- /code ---
-</div>
-
-
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-
-The rocket will not appear on the screen yet as the code you have written only loads the image, it does not draw it.
-
 </div>
 
 

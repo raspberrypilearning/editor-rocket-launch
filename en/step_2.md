@@ -1,55 +1,52 @@
-<h2 class="c-project-heading--task">Add a planet</h2>
+<h2 class="c-project-heading--task">Draw the background</h2>
 
 --- task ---
-
-➡️ Display an image of a planet.
-
+➡️ Create a black background which will represent space.
 --- /task --- 
 
-The `image()` function needs the following data:
-
-- image filename
-- x coordinate
-- y coordinate
-- image width
-- image height
+Define a `draw_background()` function.
+Set the background colour to black.
 
 <div class="c-project-code">
 --- code ---
 ---
 language: python
 line_numbers: true
-line_number_start: 13 
-line_highlights: 15-16
+line_number_start: 12 
+line_highlights: 13-14
 ---
-def draw_background():  
-    background(0,0,0)
-    image(planet, screen_size/2, screen_size, 300, 300)
+
+# The draw_background function goes here   
+def draw_background():   
+    background(0, 0, 0)    
+  
 --- /code ---
 </div>
 
+Add this function to the list of things to `draw()` in every frame.
+
+<div class="c-project-code">
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 23 
+line_highlights: 25
+---
+
+def draw():
+    # Things to do in every frame
+    draw_background() 
+  
+--- /code ---
+</div>
+
+**Test:** Run your code and you should see a black square. 
 
 <div class="c-project-callout c-project-callout--tip">
 
 ### Tip
 
-The code `image_mode(CENTER)` in the `setup()` function means the x,y coordinate you provide is the centre of the image not the top left corner. 
-
-The x coordinate for the planet is `screen_size/2` to position the centre of the planet half way across the black square, horizontally. 
-
-The y coordinate for the planet is `screen_size` to position the centre of the planet right at the bottom of the black square.
+The three numbers in `background(0, 0, 0)` are red, green and blue values. If you'd like your version of space to be a different colour, try changing these numbers to any whole number between 0 and 255.
 
 </div>
-
-**Test:** Run your code and check that it draws a black background with half a planet at the bottom.
-
-![A planet against a black background.](images/step_2.png){:width="300px"}
-
-
-
-
-
-
-
-
-

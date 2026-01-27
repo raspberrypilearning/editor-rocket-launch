@@ -1,24 +1,33 @@
-<h2 class="c-project-heading--task">Draw the rocket</h2>
+<h2 class="c-project-heading--task">Load the rocket image</h2>
 
 --- task ---
-➡️ Make the rocket appear on the screen
+The starter project has a rocket image provided for you. 
 
+![Image of the rocket in the code editor image gallery.](images/rocket_image.png)
+
+➡️ Load the rocket image
 --- /task --- 
 
-Add a `rocket_position` global variable to keep track of the rocket's `y` position. 
+Add code to the `setup()` function to load the rocket image into a `rocket` global variable. 
 
 <div class="c-project-code">
+
 --- code ---
 ---
 language: python
+filename: main.py
 line_numbers: true
-line_number_start: 6 
-line_highlights: 8
+line_number_start: 18
+line_highlights: 22, 24
 ---
 
-# Setup global variables    
-screen_size = 400    
-rocket_position = screen_size  
+def setup():   
+    # Set up your animation here   
+    size(screen_size, screen_size)   
+    image_mode(CENTER)   
+    global planet, rocket   
+    planet = load_image('planet.png')    
+    rocket = load_image('rocket.png')    
 
 --- /code ---
 </div>
@@ -28,54 +37,8 @@ rocket_position = screen_size
 
 ### Tip
 
-The `rocket_position` is set to the `screen_size` at the start so that the rocket appears right at the bottom edge of the screen. 
+The rocket will not appear on the screen yet as the code you have written only loads the image, it does not draw it.
 
 </div>
-
-Define a `draw_rocket()` function to make the rocket appear on the screen.
-
-<div class="c-project-code">
---- code ---
----
-language: python
-line_numbers: true
-line_number_start: 9 
-line_highlights: 10-12 
----
-
-# The draw_rocket function goes here   
-def draw_rocket():   
-    global rocket_position      
-    image(rocket, width/2, rocket_position, 64, 64)    
-
-
---- /code ---
-</div>
-
-Call the `draw_rocket()` function.
-
-
-<div class="c-project-code">
---- code ---
----
-language: python
-line_numbers: true
-line_number_start: 28 
-line_highlights: 31 
----
-
-def draw():
-    # Things to do in every frame
-    draw_background()
-    draw_rocket() 
-
-
---- /code ---
-</div>
-
-**Test:** Run your code and check that the rocket appears at the bottom of the image. 
-
-
-
 
 

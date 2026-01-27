@@ -8,21 +8,21 @@ listed: false
 copyedit: false
 last_tested: "2022-05-19"
 steps:
-  - title: Draw the background
-  - title: Add a planet
+  - title: Step 1
+  - title: Step 2
     completion:
       - engaged
-  - title: A different planet?
-  - title: Load the rocket image
-  - title: Draw the rocket
-  - title: Blast off
-  - title: Exhaust effects
-  - title: Lots of circles
-  - title: Random circles
+  - title: Step 3
+  - title: Step 4
+  - title: Step 5
+  - title: Step 6
+  - title: Step 7
+  - title: Step 8
+  - title: Step 9
     completion:
       - internal
-  - title: Remove the outline
+  - title: Step 10
     completion:
       - external
-  - title: What next?
+  - title: Step 11
   
