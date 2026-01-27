@@ -13,7 +13,7 @@ def setup():
     rocket = load_image('rocket.png')
 
 def draw():
-    # Re-draw background
+    # Draw background
     background(0, 0, 0)
     
     # Planet
@@ -23,7 +23,7 @@ def draw():
     global rocket_position
     rocket_position = rocket_position - 1    
     image(rocket, width/2, rocket_position, 64, 64)     
-  #  no_stroke()
+    no_stroke()
     fill(200, 200, 200, 100) 
     for i in range(20):
         ellipse(width/2 + randint(-5,5), rocket_position + randint(20,50), randint(5,10))    
