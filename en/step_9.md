@@ -1,12 +1,12 @@
-<h2 class="c-project-heading--task">Lots of circles</h2>
+<h2 class="c-project-heading--task">Random circles</h2>
 
 --- task ---
 
-Add a loop to draw multiple circles, to make the exhaust effect even better.
+➡️ Generate the circles in random places instead of on top of each other. 
 
 --- /task ---
 
-Add a loop which will run the code 20 times. Indent the `ellipse()` so that it is in the loop.
+Generate a random number in the x and y position of each circle so they aren't all drawn in the same place.
 
 <div class="c-project-code">
 --- code ---
@@ -14,7 +14,7 @@ Add a loop which will run the code 20 times. Indent the `ellipse()` so that it i
 language: python
 line_numbers: true
 line_number_start: 23
-line_highlights: 28-29
+line_highlights: 29
 ---
     # Rocket 
     rocket_position = rocket_position - 1    
@@ -22,18 +22,19 @@ line_highlights: 28-29
     stroke(0)
     fill(200, 200, 200, 100) 
     for i in range(20):
-        ellipse(width/2, rocket_position, randint(5,10))    
+        ellipse(width/2 + randint(-5,5), rocket_position + randint(20,50), randint(5,10))    
 
 --- /code ---
-
+   
 --- task ---
 
-**Test:** Run your program. You will still see a flashing grey circle at the bottom of the rocket - all of the circles have been drawn on top of each other! 
+**Test:** Run your program and you should see lots of grey circles in random places at the bottom of the rocket. 
+
+Change the `randint()` number ranges in your code to make your smoke how you want it.
 
 --- /task ---
 </div>
 
 <div class="c-project-output">
-![Lots of small circles at the bottom of the rocket](images/rocket_circles.png)
+![A slow animation of the smoke effect.](images/rocket_lotscircles.png)
 </div>
-

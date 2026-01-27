@@ -1,35 +1,14 @@
-<h2 class="c-project-heading--task">Remove the outline</h2>
+<h2 class="c-project-heading--task">You've completed the project 🎉</h2>
 
 --- task ---
 
-Remove the outline of the circles to make them look more realistic.
+We’d love to hear your thoughts about using the Code editor to complete the 'Rocket launch' project! 
+
+➡️ Please complete our [feedback form](https://form.raspberrypi.org/4873648) to let us know.
+
+### What next?
+
+If you are following the [Introduction to Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pathway, you can move on to the [Make a face](https://projects.raspberrypi.org/en/projects/make-a-face) project. In this project, you will draw a face or mask using geometric shapes.
 
 --- /task ---
 
-The outline around the circles is called the **stroke**. Add some code to turn it off. 
-
-<div class="c-project-code">
---- code ---
----
-language: python
-line_numbers: true
-line_number_start: 23
-line_highlights: 26
----
-# Rocket 
-    rocket_position = rocket_position - 1    
-    image(rocket, width/2, rocket_position, 64, 64)     
-    no_stroke()
-    fill(200, 200, 200, 100) 
-    for i in range(20):
-        ellipse(width/2 + randint(-5,5), rocket_position + randint(20,50), randint(5,10))    
---- /code ---
-
-**Test:** Run your program and you should see the same exhaust trail but without the outlines. 
-
---- /task ---
-</div>
-
-<div class="c-project-output">
-![A slow animation of the smoke effect.](images/rocket_smoke.gif)
-</div>

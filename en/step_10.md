@@ -1,12 +1,12 @@
-<h2 class="c-project-heading--task">Random circles</h2>
+<h2 class="c-project-heading--task">Remove the outline</h2>
 
 --- task ---
 
-➡️ Generate the circles in random places instead of on top of each other. 
+Remove the outline of the circles to make them look more realistic.
 
 --- /task ---
 
-Generate a random number in the x and y position of each circle so they aren't all drawn in the same place.
+The outline around the circles is called the **stroke**. Add some code to turn it off. 
 
 <div class="c-project-code">
 --- code ---
@@ -14,27 +14,22 @@ Generate a random number in the x and y position of each circle so they aren't a
 language: python
 line_numbers: true
 line_number_start: 23
-line_highlights: 29
+line_highlights: 26
 ---
-    # Rocket 
+# Rocket 
     rocket_position = rocket_position - 1    
     image(rocket, width/2, rocket_position, 64, 64)     
-    stroke(0)
+    no_stroke()
     fill(200, 200, 200, 100) 
     for i in range(20):
         ellipse(width/2 + randint(-5,5), rocket_position + randint(20,50), randint(5,10))    
-
 --- /code ---
-   
---- task ---
 
-**Test:** Run your program and you should see lots of grey circles in random places at the bottom of the rocket. 
-
-Change the `randint()` number ranges in your code to make your smoke how you want it.
+**Test:** Run your program and you should see the same exhaust trail but without the outlines. 
 
 --- /task ---
 </div>
 
 <div class="c-project-output">
-![A slow animation of the smoke effect.](images/rocket_lotscircles.png)
+![A slow animation of the smoke effect.](images/rocket_smoke.gif)
 </div>
