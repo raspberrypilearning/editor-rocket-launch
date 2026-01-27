@@ -1,6 +1,7 @@
-# Import library code
 from p5 import *
 from random import randint
+
+# Define variables
 
 def setup():
     # Set up your animation here
@@ -11,9 +12,6 @@ def setup():
     rocket = load_image('rocket.png')
 
 def draw():
-    # Make your animation here
-
-    
 
 
 run()
