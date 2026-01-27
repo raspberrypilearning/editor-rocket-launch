@@ -2,42 +2,39 @@
 
 --- task ---
 
-Move the rocket up the screen to create an animation.
+Decrease the y coordinate `rocket_position` by 1 each time it is drawn to make an animation.
 
 --- /task --- 
 
---- task ---
+<div class="c-project-callout c-project-callout--tip">
 
-In `draw()` decrease `rocket_position` by 1 each time a new frame is drawn. This moves the image to a new y coordinate, making the animation.
+### Tip
 
---- /task ---
+You can make it move faster or slower by changing the decrease number.
+
+</div>
+
 
 <div class="c-project-code">
 --- code ---
 ---
 language: python
 line_numbers: true
-line_number_start: 15 
-line_highlights: 20
+line_number_start: 22
+line_highlights: 23-24
 ---
-def draw():
-    # Make your animation here
+    # Rocket
     global rocket_position
-    background(0, 0, 0)
-    
-    # Planet
-    image(planet, width/2, 400, 300, 300)    
-    
-    # Rocket 
-    rocket_position = rocket_position - 1    
-    image(rocket, width/2, rocket_position, 64, 64)     
+    rocket_position = rocket_position - 1   
+    image(rocket, width/2, rocket_position, 64, 64)    
+   
 --- /code ---
 
---- test ---
+--- task ---
 
 **Test:** Run your code to check that the rocket blasts off from the bottom of the screen.
 
---- /test ---
+--- /task ---
 </div>
 
 <div class="c-project-output">

@@ -23,17 +23,23 @@ Change the planet image in the code to the filename of your chosen planet, for e
 ---
 language: python
 line_numbers: true
-line_number_start: 4
-line_highlights: 9
+line_number_start: 6
+line_highlights: 11
 ---
 def setup():
     # Set up your animation here
     size(400, 400)
     image_mode(CENTER)
     global planet, rocket
-    planet = load_image('planet.png')
+    planet = load_image('orange_planet.png')
     rocket = load_image('rocket.png')
 --- /code ---
+--- task ---
+
+**Test:** Run your code and find a planet that you want to use for your animation. 
+
+--- /task ---
 </div>
+
 
 

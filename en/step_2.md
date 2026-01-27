@@ -27,13 +27,13 @@ def draw():
 
 --- /code ---
 
---- test ---
+--- task ---
 
 **Test:** Run your code and you should see a black square. 
 
 Make your own version, change the background colour by editing the numbers in the code. Any whole number between `0` and `255`.
 
---- /test ---
+--- /task ---
 </div>
 
 
