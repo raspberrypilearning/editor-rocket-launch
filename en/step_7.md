@@ -39,11 +39,15 @@ line_highlights: 26-27
 
 **Test:** Run your program and you should see small grey circles appear at the bottom of the rocket.
 
-Change the numbers in `randint()` to see the random size circle get smaller or bigger.
-
 --- /task ---
 
 </div>
+
+--- task ---
+
+Change the numbers in `randint()` to see the random size circle get smaller or bigger.
+
+--- /task ---
 
 <div class="c-project-output">
 ![A circle at the bottom of the rocket](images/rocket_circle.png)
