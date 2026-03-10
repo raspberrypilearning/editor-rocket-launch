@@ -30,15 +30,14 @@ line_highlights: 27-28
     for i in range(20):
         ellipse(width/2, rocket_position, randint(5,10))
 --- /code ---
+</div>
 
 --- task ---
 
 **Test:** Run your program. You will still see a flashing grey circle at the bottom of the rocket - all of the circles have been drawn on top of each other! 
 
 --- /task ---
-</div>
 
 <div class="c-project-output">
 ![Lots of small circles at the bottom of the rocket](images/rocket_circles.png)
 </div>
-

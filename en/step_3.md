@@ -35,14 +35,13 @@ def draw():
     # Planet
     image(planet, width/2, 400, 300, 300)
 --- /code ---
+</div>
 
 --- task ---
 
 **Test:** Run your code and check that it draws a black background with half a planet at the bottom.
 
 --- /task ---
-
-</div>
 
 
 <div class="c-project-output">
@@ -56,7 +55,6 @@ def draw():
 `width` is the width of the screen and `width/2` will be half this, at the centre of the screen. 
 
 </div>
-
 
 
 

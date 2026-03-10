@@ -26,6 +26,7 @@ def draw():
     background(0, 0, 0)
 
 --- /code ---
+</div>
 
 --- task ---
 
@@ -34,6 +35,4 @@ def draw():
 Make your own version, change the background colour by editing the numbers in the code. Any whole number between `0` and `255`.
 
 --- /task ---
-</div>
-
 

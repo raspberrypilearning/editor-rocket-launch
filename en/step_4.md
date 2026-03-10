@@ -34,12 +34,11 @@ def setup():
     planet = load_image('orange_planet.png')
     rocket = load_image('rocket.png')
 --- /code ---
+</div>
 --- task ---
 
 **Test:** Run your code and find a planet that you want to use for your animation. 
 
 --- /task ---
-</div>
-
 
 

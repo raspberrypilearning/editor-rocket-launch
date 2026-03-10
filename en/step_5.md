@@ -49,6 +49,7 @@ def draw():
     # Rocket
     image(rocket, width/2, rocket_position, 64, 64)    
 --- /code ---
+</div>
 
 --- task ---
 
@@ -56,7 +57,4 @@ def draw():
 
 
 --- /task ---
-
-</div>
-
 

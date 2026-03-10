@@ -28,13 +28,13 @@ line_highlights: 23-24
     rocket_position = rocket_position - 1   
     image(rocket, width/2, rocket_position, 64, 64)    
 --- /code ---
+</div>
 
 --- task ---
 
 **Test:** Run your code to check that the rocket blasts off from the bottom of the screen.
 
 --- /task ---
-</div>
 
 <div class="c-project-output">
 ![A rocket flying at a steady speed from the bottom to the top of the screen.](images/fly.gif){:width="300px"}

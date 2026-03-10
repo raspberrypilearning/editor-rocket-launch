@@ -30,13 +30,13 @@ line_highlights: 26
     for i in range(20):
         ellipse(width/2 + randint(-5,5), rocket_position + randint(20,50), randint(5,10))
 --- /code ---
+</div>
 
 --- task ---
 
 **Test:** Run your program and you should see the same exhaust trail but without the outlines.
 
 --- /task ---
-</div>
 
 <div class="c-project-output">
 ![A slow animation of the smoke effect.](images/rocket_smoke.gif)

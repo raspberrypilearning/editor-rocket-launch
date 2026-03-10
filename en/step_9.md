@@ -29,13 +29,13 @@ line_highlights: 28
         ellipse(width/2 + randint(-5,5), rocket_position + randint(20,50), randint(5,10))
 
 --- /code ---
+</div>
    
 --- task ---
 
 **Test:** Run your program and you should see lots of grey circles in random places at the bottom of the rocket. 
 
 --- /task ---
-</div>
 
 <div class="c-project-output">
 ![Circles with stoke - smoke effect.](images/rocket_lotscircles.png)

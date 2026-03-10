@@ -34,14 +34,13 @@ line_highlights: 26-27
     fill(200, 200, 200, 100) 
     ellipse(width/2, rocket_position, randint(5,10))
 --- /code ---
+</div>
 
 --- task ---
 
 **Test:** Run your program and you should see small grey circles appear at the bottom of the rocket.
 
 --- /task ---
-
-</div>
 
 --- task ---
 
