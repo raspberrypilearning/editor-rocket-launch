@@ -1,60 +1,39 @@
-<h2 class="c-project-heading--task">Draw the rocket</h2>
+<h2 class="c-project-heading--task">Blast off!</h2>
 
---- task ---
+### Step 1
 
-Make the rocket appear on the screen.
+Decrease the y coordinate `rocket_position` by 1 each time it is drawn to make an animation.
 
---- /task --- 
 
---- task ---
+<div class="c-project-callout c-project-callout--tip">
 
-First add `rocket_position` to start at 400 (the screen height). 
+### Tip
 
-Then add another `image()` and use `rocket_position` as the y coordinate.
+You can make it move faster or slower by changing the decrease number.
 
---- /task ---
+</div>
 
---- task ---
-
-Move your rocket and change it to the size you want by editing the code.
-
---- /task ---
 
 <div class="c-project-code">
 --- code ---
 ---
 language: python
 line_numbers: true
-line_number_start: 4
-line_highlights: 5, 22-23 
+line_number_start: 22
+line_highlights: 23-24
 ---
-# Define variables
-rocket_position = 400
-
-def setup():
-    # Set up your animation here
-    size(400, 400)
-    image_mode(CENTER)
-    global planet, rocket
-    planet = load_image('planet.png')
-    rocket = load_image('rocket.png')
-
-def draw():
-    # Draw background
-    background(0, 0, 0)
-
-    # Planet
-    image(planet, width/2, 400, 300, 300)
-
     # Rocket
+    global rocket_position
+    rocket_position = rocket_position - 1   
     image(rocket, width/2, rocket_position, 64, 64)    
 --- /code ---
 </div>
 
---- task ---
+### Step 2
 
-**Test:** Run your code and check that the rocket appears.
+**Test:** Run your code to check that the rocket blasts off from the bottom of the screen.
 
 
---- /task ---
-
+<div class="c-project-output">
+![A rocket flying at a steady speed from the bottom to the top of the screen.](images/fly.gif){:width="300px"}
+</div>

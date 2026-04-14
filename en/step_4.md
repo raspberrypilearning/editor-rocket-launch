@@ -1,44 +1,53 @@
-<h2 class="c-project-heading--task">A different planet?</h2>
+<h2 class="c-project-heading--task">Draw the rocket</h2>
 
---- task ---
-➡️ Choose a different planet image.
---- /task --- 
+### Step 1
 
---- task ---
+Make the rocket appear on the screen.
 
-Click on the image icon to view the image gallery. 
 
---- /task ---
+### Step 2
 
-![Choose a different planet](images/image_gallery.png)
+First add `rocket_position` to start at 400 (the screen height). 
 
---- task ---
+Then add another `image()` and use `rocket_position` as the y coordinate.
 
-Change the planet image in the code to the filename of your chosen planet, for example, `orange_planet.png`. 
 
---- /task ---
+### Step 3
+
+Move your rocket and change it to the size you want by editing the code.
+
 
 <div class="c-project-code">
 --- code ---
 ---
 language: python
 line_numbers: true
-line_number_start: 6
-line_highlights: 11
+line_number_start: 4
+line_highlights: 5, 22-23 
 ---
+# Define variables
+rocket_position = 400
+
 def setup():
     # Set up your animation here
     size(400, 400)
     image_mode(CENTER)
     global planet, rocket
-    planet = load_image('orange_planet.png')
+    planet = load_image('planet.png')
     rocket = load_image('rocket.png')
+
+def draw():
+    # Draw background
+    background(0, 0, 0)
+
+    # Planet
+    image(planet, width/2, 400, 300, 300)
+
+    # Rocket
+    image(rocket, width/2, rocket_position, 64, 64)    
 --- /code ---
 </div>
---- task ---
 
-**Test:** Run your code and find a planet that you want to use for your animation. 
+### Step 4
 
---- /task ---
-
-
+**Test:** Run your code and check that the rocket appears.

@@ -1,38 +1,54 @@
-<h2 class="c-project-heading--task">Draw the background</h2>
+<h2 class="c-project-heading--task">Add a planet</h2>
 
---- task ---
+### Step 1
 
-In `draw()` set the background to black with the code below. 
+Display an image of a planet.
 
---- /task --- 
 
-<div class="c-project-callout c-project-callout--tip">
+The `image()` function needs the following:
 
-### Tip
++ image filename
++ x coordinate
++ y coordinate
++ width
++ height
 
-The three numbers in `background(0, 0, 0)` are red, green and blue values. 
-</div>
+### Step 2
+
+Change the size and position of the planet by editing the numbers in the code.
+
 
 <div class="c-project-code">
 --- code ---
 ---
 language: python
 line_numbers: true
-line_number_start: 14
-line_highlights: 16
+line_number_start: 14 
+line_highlights: 18-19
 ---
 def draw():
     # Draw background
     background(0, 0, 0)
 
+    # Planet
+    image(planet, width/2, 400, 300, 300)
 --- /code ---
 </div>
 
---- task ---
+### Step 3
 
-**Test:** Run your code and you should see a black square. 
+**Test:** Run your code and check that it draws a black background with half a planet at the bottom.
 
-Make your own version, change the background colour by editing the numbers in the code. Any whole number between `0` and `255`.
 
---- /task ---
 
+<div class="c-project-output">
+![A planet against a black background.](images/step_2.png){:width="300px"}
+</div>
+
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
+`width` is the width of the screen and `width/2` will be half this, at the centre of the screen. 
+
+</div>

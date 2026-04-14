@@ -1,3 +1,4 @@
 name: 'Rocket Launch Example'
 identifier: 'editor-rocket-launch-example'
 type: 'python'
+build: true

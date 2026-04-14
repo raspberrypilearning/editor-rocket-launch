@@ -6,24 +6,23 @@ meta_description: Learn Python with the Raspberry Pi Foundation's coding project
 version: 4
 listed: true
 copyedit: false
-landing: true
 last_tested: "2022-05-19"
+landing: true
 steps:
-  - title: Step 1
-  - title: Step 2
+  - title: Draw the background
+  - title: Add a planet
     completion:
       - engaged
-  - title: Step 3
-  - title: Step 4
-  - title: Step 5
-  - title: Step 6
-  - title: Step 7
-  - title: Step 8
-  - title: Step 9
+  - title: A different planet?
+  - title: Draw the rocket
+  - title: Blast off!
+  - title: Exhaust effects
+  - title: Lots of circles
+  - title: Random circles
     completion:
       - internal
-  - title: Step 10
+  - title: Remove the outline
     completion:
       - external
-  - title: Step 11
-  
+  - title: Challenge
+    challenge: true

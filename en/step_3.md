@@ -1,60 +1,37 @@
-<h2 class="c-project-heading--task">Add a planet</h2>
+<h2 class="c-project-heading--task">A different planet?</h2>
 
---- task ---
+### Step 1
+➡️ Choose a different planet image.
 
-Display an image of a planet.
+### Step 2
 
---- /task --- 
+Click on the image icon to view the image gallery. 
 
-The `image()` function needs the following:
 
-+ image filename
-+ x coordinate
-+ y coordinate
-+ width
-+ height
+![Choose a different planet](images/image_gallery.png)
 
---- task ---
+### Step 3
 
-Change the size and position of the planet by editing the numbers in the code.
+Change the planet image in the code to the filename of your chosen planet, for example, `orange_planet.png`. 
 
---- /task ---
 
 <div class="c-project-code">
 --- code ---
 ---
 language: python
 line_numbers: true
-line_number_start: 14 
-line_highlights: 18-19
+line_number_start: 6
+line_highlights: 11
 ---
-def draw():
-    # Draw background
-    background(0, 0, 0)
-
-    # Planet
-    image(planet, width/2, 400, 300, 300)
+def setup():
+    # Set up your animation here
+    size(400, 400)
+    image_mode(CENTER)
+    global planet, rocket
+    planet = load_image('orange_planet.png')
+    rocket = load_image('rocket.png')
 --- /code ---
 </div>
+### Step 4
 
---- task ---
-
-**Test:** Run your code and check that it draws a black background with half a planet at the bottom.
-
---- /task ---
-
-
-<div class="c-project-output">
-![A planet against a black background.](images/step_2.png){:width="300px"}
-</div>
-
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-
-`width` is the width of the screen and `width/2` will be half this, at the centre of the screen. 
-
-</div>
-
-
-
+**Test:** Run your code and find a planet that you want to use for your animation.

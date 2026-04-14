@@ -1,3 +1,4 @@
 name: "Rocket Launch"
 identifier: 'editor-rocket-launch-starter'
 type: 'python'
+build: true
