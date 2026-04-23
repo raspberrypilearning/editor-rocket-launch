@@ -1,12 +1,12 @@
 <h2 class="c-project-heading--task">Remove the outline</h2>
 
-### Step 1
-
 Add some code to remove the outline of the circles to make them look more like smoke.
 
-<div class="c-project-callout c-project-callout--tip">
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 ### Tip
+
+<div class="c-project-callout c-project-callout--tip">
 
 The outline around the circles is called the **stroke**. `no_stroke()` turns it off.
 
@@ -31,11 +31,13 @@ line_highlights: 26
 --- /code ---
 </div>
 
-### Step 2
+## Now run your code
 
-**Test:** Run your program and you should see the same exhaust trail but without the outlines.
+Run your program and you should see the same exhaust trail but without the outlines.
 
 
 <div class="c-project-output">
 ![A slow animation of the smoke effect.](images/rocket_smoke.gif)
 </div>
+
+Confirm the observable result.

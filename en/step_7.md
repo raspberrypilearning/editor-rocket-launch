@@ -1,13 +1,12 @@
 <h2 class="c-project-heading--task">Lots of circles</h2>
 
-### Step 1
-
 Add a loop to draw multiple circles, to make the exhaust effect even better.
 
-
-<div class="c-project-callout c-project-callout--tip">
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 ### Tip
+
+<div class="c-project-callout c-project-callout--tip">
 
 Indent the `ellipse()` so that it is in the loop.
 
@@ -31,11 +30,13 @@ line_highlights: 27-28
 --- /code ---
 </div>
 
-### Step 2
+## Now run your code
 
-**Test:** Run your program. You will still see a flashing grey circle at the bottom of the rocket - all of the circles have been drawn on top of each other! 
+Run your program. You will still see a flashing grey circle at the bottom of the rocket - all of the circles have been drawn on top of each other!
 
 
 <div class="c-project-output">
 ![Lots of small circles at the bottom of the rocket](images/rocket_circles.png)
 </div>
+
+Confirm the observable result.

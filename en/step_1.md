@@ -1,13 +1,12 @@
 <h2 class="c-project-heading--task">Draw the background</h2>
 
-### Step 1
+In `draw()` set the background to black with the code below.
 
-In `draw()` set the background to black with the code below. 
-
-
-<div class="c-project-callout c-project-callout--tip">
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 ### Tip
+
+<div class="c-project-callout c-project-callout--tip">
 
 The three numbers in `background(0, 0, 0)` are red, green and blue values. 
 </div>
@@ -27,8 +26,10 @@ def draw():
 --- /code ---
 </div>
 
-### Step 2
+## Now run your code
 
-**Test:** Run your code and you should see a black square. 
+You should see a black square.
 
 Make your own version, change the background colour by editing the numbers in the code. Any whole number between `0` and `255`.
+
+Confirm the observable result.

@@ -1,16 +1,19 @@
 <h2 class="c-project-heading--task">A different planet?</h2>
 
-### Step 1
 ➡️ Choose a different planet image.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
 
 Click on the image icon to view the image gallery. 
 
 
+<div class="c-project-output">
 ![Choose a different planet](images/image_gallery.png)
+</div>
 
-### Step 3
+## Step 2
 
 Change the planet image in the code to the filename of your chosen planet, for example, `orange_planet.png`. 
 
@@ -32,6 +35,9 @@ def setup():
     rocket = load_image('rocket.png')
 --- /code ---
 </div>
-### Step 4
 
-**Test:** Run your code and find a planet that you want to use for your animation.
+## Now run your code
+
+Find a planet that you want to use for your animation.
+
+Confirm the observable result.

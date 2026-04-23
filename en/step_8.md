@@ -1,11 +1,8 @@
 <h2 class="c-project-heading--task">Random circles</h2>
 
-### Step 1
+Generate the circles in random places instead of on top of each other.
 
-Generate the circles in random places instead of on top of each other. 
-
-
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Change the `randint()` number ranges in your code to make your smoke how you want it.
 
@@ -28,12 +25,14 @@ line_highlights: 28
 
 --- /code ---
 </div>
-   
-### Step 3
 
-**Test:** Run your program and you should see lots of grey circles in random places at the bottom of the rocket. 
+## Now run your code
+
+Run your program and you should see lots of grey circles in random places at the bottom of the rocket.
 
 
 <div class="c-project-output">
 ![Circles with stoke - smoke effect.](images/rocket_lotscircles.png)
 </div>
+
+Confirm the observable result.

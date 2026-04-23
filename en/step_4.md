@@ -1,18 +1,16 @@
 <h2 class="c-project-heading--task">Draw the rocket</h2>
 
-### Step 1
-
 Make the rocket appear on the screen.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
-### Step 2
+## Step 1
 
 First add `rocket_position` to start at 400 (the screen height). 
 
 Then add another `image()` and use `rocket_position` as the y coordinate.
 
-
-### Step 3
+## Step 2
 
 Move your rocket and change it to the size you want by editing the code.
 
@@ -48,6 +46,8 @@ def draw():
 --- /code ---
 </div>
 
-### Step 4
+## Now run your code
 
-**Test:** Run your code and check that the rocket appears.
+Check that the rocket appears.
+
+Confirm the observable result.

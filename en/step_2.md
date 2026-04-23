@@ -1,9 +1,10 @@
 <h2 class="c-project-heading--task">Add a planet</h2>
 
-### Step 1
-
 Display an image of a planet.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
 
 The `image()` function needs the following:
 
@@ -13,7 +14,7 @@ The `image()` function needs the following:
 + width
 + height
 
-### Step 2
+## Step 2
 
 Change the size and position of the planet by editing the numbers in the code.
 
@@ -35,9 +36,9 @@ def draw():
 --- /code ---
 </div>
 
-### Step 3
+## Now run your code
 
-**Test:** Run your code and check that it draws a black background with half a planet at the bottom.
+Check that it draws a black background with half a planet at the bottom.
 
 
 
@@ -45,10 +46,12 @@ def draw():
 ![A planet against a black background.](images/step_2.png){:width="300px"}
 </div>
 
-<div class="c-project-callout c-project-callout--tip">
-
 ### Tip
+
+<div class="c-project-callout c-project-callout--tip">
 
 `width` is the width of the screen and `width/2` will be half this, at the centre of the screen. 
 
 </div>
+
+Confirm the observable result.
