@@ -38,10 +38,6 @@ def draw():
 
 ## Now run your code
 
-Check that it draws a black background with half a planet at the bottom.
-
-
-
 <div class="c-project-output">
 ![A planet against a black background.](images/step_2.png){:width="300px"}
 </div>
@@ -54,4 +50,4 @@ Check that it draws a black background with half a planet at the bottom.
 
 </div>
 
-Confirm the observable result.
+Run your code and check that you see a black background with half a planet at the bottom.

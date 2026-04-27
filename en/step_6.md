@@ -32,8 +32,6 @@ line_highlights: 26-27
 
 ## Now run your code
 
-Run your program and you should see small grey circles appear at the bottom of the rocket.
-
 Change the numbers in `randint()` to see the random size circle get smaller or bigger.
 
 
@@ -51,4 +49,4 @@ Change the numbers in `randint()` to see the random size circle get smaller or b
 + `fill()` has 4 values: red, green, blue, and opacity. The opacity can be between 0 and 255, anywhere in between makes a transparent shape.
 </div>
 
-Confirm the observable result.
+Run your code and check that small grey circles appear at the bottom of the rocket.

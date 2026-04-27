@@ -40,4 +40,4 @@ def setup():
 
 Find a planet that you want to use for your animation.
 
-Confirm the observable result.
+Run your code and check that the planet image changes to the one you chose.

@@ -30,11 +30,8 @@ line_highlights: 23-24
 
 ## Now run your code
 
-Check that the rocket blasts off from the bottom of the screen.
-
-
 <div class="c-project-output">
 ![A rocket flying at a steady speed from the bottom to the top of the screen.](images/fly.gif){:width="300px"}
 </div>
 
-Confirm the observable result.
+Run your code and check that the rocket blasts off from the bottom of the screen.

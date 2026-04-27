@@ -48,6 +48,4 @@ def draw():
 
 ## Now run your code
 
-Check that the rocket appears.
-
-Confirm the observable result.
+Run your code and check that the rocket appears.

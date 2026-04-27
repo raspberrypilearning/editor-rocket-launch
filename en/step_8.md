@@ -28,11 +28,8 @@ line_highlights: 28
 
 ## Now run your code
 
-Run your program and you should see lots of grey circles in random places at the bottom of the rocket.
-
-
 <div class="c-project-output">
 ![Circles with stoke - smoke effect.](images/rocket_lotscircles.png)
 </div>
 
-Confirm the observable result.
+Run your code and check that lots of grey circles appear in random places at the bottom of the rocket.

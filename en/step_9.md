@@ -33,11 +33,8 @@ line_highlights: 26
 
 ## Now run your code
 
-Run your program and you should see the same exhaust trail but without the outlines.
-
-
 <div class="c-project-output">
 ![A slow animation of the smoke effect.](images/rocket_smoke.gif)
 </div>
 
-Confirm the observable result.
+Run your code and check that the smoke trail still appears, but without outlines.

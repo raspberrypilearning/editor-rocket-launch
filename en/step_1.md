@@ -32,4 +32,4 @@ You should see a black square.
 
 Make your own version, change the background colour by editing the numbers in the code. Any whole number between `0` and `255`.
 
-Confirm the observable result.
+Run your code and check that you see a black square.

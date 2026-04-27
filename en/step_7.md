@@ -32,11 +32,8 @@ line_highlights: 27-28
 
 ## Now run your code
 
-Run your program. You will still see a flashing grey circle at the bottom of the rocket - all of the circles have been drawn on top of each other!
-
-
 <div class="c-project-output">
 ![Lots of small circles at the bottom of the rocket](images/rocket_circles.png)
 </div>
 
-Confirm the observable result.
+Run your code and check that a flashing grey circle appears at the bottom of the rocket.

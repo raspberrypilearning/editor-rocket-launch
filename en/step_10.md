@@ -8,4 +8,4 @@ Add to your animation so that the rocket reappears and lands on a different plan
 
 ## Now run your code
 
-Confirm the observable result.
+Run your code and check that your smoke uses different colours and any extra landing animation you add works.
