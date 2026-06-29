@@ -1,26 +1,11 @@
-<h2 class="c-project-heading--task">Remove the outline</h2>
+<h2 class="c-project-heading--task">Challenge</h2>
 
---- task ---
+Give your smoke circles a range of different colours.
 
-➡️ Remove the outline of the circles to make them look more realistic.
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
---- /task ---
+Add to your animation so that the rocket reappears and lands on a different planet
 
-The outline around the circles is called the **stroke**. Add some code to turn it off. 
+## Now run your code
 
---- code ---
----
-language: python
-line_numbers: true
-line_number_start: 13
-line_highlights: 14
----
-
-    fill(200, 200, 200, 100) 
-    no_stroke()
-    
-
---- /code ---
-
-
-**Test:** Run your program and you should see the same exhaust trail but without the outlines. 
+Run your code and check that your smoke uses different colours and any extra landing animation you add works.

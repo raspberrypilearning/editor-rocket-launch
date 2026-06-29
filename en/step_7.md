@@ -1,62 +1,39 @@
-<h2 class="c-project-heading--task">Exhaust effects</h2>
+<h2 class="c-project-heading--task">Lots of circles</h2>
 
---- task ---
+Add a loop to draw multiple circles, to make the exhaust effect even better.
 
-➡️ Add some grey circles to simulate the exhaust trail. 
-
-![A slow animation of the smoke effect.](images/rocket_smoke.gif)
-
---- /task ---
-
-Set the fill colour for the smoke to transparent grey. 
-
---- code ---
----
-language: python
-line_numbers: true
-line_number_start: 10
-line_highlights: 14
----
-
-def draw_rocket():
-    global rocket_position
-    rocket_position = rocket_position - 1
-    image(rocket, width/2, rocket_position, 64, 64)
-    fill(200, 200, 200, 100) 
-    
-
---- /code ---
-
-
-Generate a random number between 5 and 10 for the size of the circle, then draw it at the bottom of the rocket.
-
---- code ---
----
-language: python
-line_numbers: true
-line_number_start: 14
-line_highlights: 15-16
----
-
-fill(200, 200, 200, 100) 
-circle_size = randint(5,10) 
-ellipse(
-    screen_size/2, 
-    rocket_position, 
-    circle_size, 
-    circle_size
-)   
-
---- /code ---
-   
-
-
-**Test:** Run your program and you should see a grey circle appear at the bottom of the rocket. 
-
-
-<div class="c-project-callout c-project-callout--tip">
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 ### Tip
 
-The function which draws the circle is called `ellipse` as it can also draw ovals too. Setting both the width and height to the same value (`circle_size`) draws a circle. 
+<div class="c-project-callout c-project-callout--tip">
+
+Indent the `ellipse()` so that it is in the loop.
+
 </div>
+
+<div class="c-project-code">
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 22
+line_highlights: 27-28
+---
+    # Rocket
+    global rocket_position
+    rocket_position = rocket_position - 1   
+    image(rocket, width/2, rocket_position, 64, 64)    
+    fill(200, 200, 200, 100) 
+    for i in range(20):
+        ellipse(width/2, rocket_position, randint(5,10))
+--- /code ---
+</div>
+
+## Now run your code
+
+<div class="c-project-output">
+![Lots of small circles at the bottom of the rocket](images/rocket_circles.png)
+</div>
+
+Run your code and check that a flashing grey circle appears at the bottom of the rocket.

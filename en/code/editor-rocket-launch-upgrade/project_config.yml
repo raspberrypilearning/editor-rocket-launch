@@ -1,3 +1,4 @@
 name: 'Rocket Launch Upgrade'
 identifier: 'editor-rocket-launch-upgrade'
 type: 'python'
+build: true

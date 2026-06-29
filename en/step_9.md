@@ -1,29 +1,40 @@
-<h2 class="c-project-heading--task">Random circles</h2>
+<h2 class="c-project-heading--task">Remove the outline</h2>
 
---- task ---
+Add some code to remove the outline of the circles to make them look more like smoke.
 
-➡️ Generate the circles in random places instead of on top of each other. 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
---- /task ---
+### Tip
 
-Generate a random number and add it to the x and y position of each circle so they aren't all drawn in the same place.
+<div class="c-project-callout c-project-callout--tip">
 
+The outline around the circles is called the **stroke**. `no_stroke()` turns it off.
+
+</div>
+
+<div class="c-project-code">
 --- code ---
 ---
 language: python
 line_numbers: true
-line_number_start: 16
-line_highlights: 17-18
+line_number_start: 22
+line_highlights: 26
 ---
-
-ellipse(
-    screen_size/2 + randint(-5,5), 
-    rocket_position + randint(20,50), 
-    circle_size, 
-    circle_size
-)   
-
+# Rocket
+    global rocket_position
+    rocket_position = rocket_position - 1   
+    image(rocket, width/2, rocket_position, 64, 64)    
+    no_stroke()
+    fill(200, 200, 200, 100) 
+    for i in range(20):
+        ellipse(width/2 + randint(-5,5), rocket_position + randint(20,50), randint(5,10))
 --- /code ---
-   
+</div>
 
-**Test:** Run your program and you should see lots of grey circles in random places at the bottom of the rocket. 
+## Now run your code
+
+<div class="c-project-output">
+![A slow animation of the smoke effect.](images/rocket_smoke.gif)
+</div>
+
+Run your code and check that the smoke trail still appears, but without outlines.
