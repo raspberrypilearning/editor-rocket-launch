@@ -2,8 +2,6 @@
 
 Generate the circles in random places instead of on top of each other.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Change the `randint()` number ranges in your code to make your smoke how you want it.
 
 
