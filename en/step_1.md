@@ -2,8 +2,6 @@
 
 In `draw()` set the background to black with the code below.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ### Tip
 
 <div class="c-project-callout c-project-callout--tip">

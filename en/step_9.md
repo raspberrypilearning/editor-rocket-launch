@@ -2,8 +2,6 @@
 
 Add some code to remove the outline of the circles to make them look more like smoke.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ### Tip
 
 <div class="c-project-callout c-project-callout--tip">

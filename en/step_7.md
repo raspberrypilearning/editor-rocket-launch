@@ -2,8 +2,6 @@
 
 Add a loop to draw multiple circles, to make the exhaust effect even better.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ### Tip
 
 <div class="c-project-callout c-project-callout--tip">

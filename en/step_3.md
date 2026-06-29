@@ -2,8 +2,6 @@
 
 ➡️ Choose a different planet image.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
 Click on the image icon to view the image gallery. 
