@@ -2,8 +2,6 @@
 
 Decrease the y coordinate `rocket_position` by 1 each time it is drawn to make an animation.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ### Tip
 
 <div class="c-project-callout c-project-callout--tip">
