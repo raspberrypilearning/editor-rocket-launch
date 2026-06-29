@@ -2,8 +2,6 @@
 
 Add some grey circles to simulate exhaust smoke.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
 Set the `fill` colour to transparent grey.
