@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">Add a planet</h2>
+## Add a planet
 
 Display an image of a planet.
 
@@ -16,36 +16,20 @@ The `image()` function needs the following:
 
 Change the size and position of the planet by editing the numbers in the code.
 
-
-<div class="c-project-code">
---- code ---
----
-language: python
-line_numbers: true
-line_number_start: 14 
-line_highlights: 18-19
----
+```python line_numbers="true" line_number_start="14" line_highlights="18-19"
 def draw():
     # Draw background
     background(0, 0, 0)
 
     # Planet
     image(planet, width/2, 400, 300, 300)
---- /code ---
-</div>
+```
 
 ## Now run your code
 
-<div class="c-project-output">
 ![A planet against a black background.](images/step_2.png){:width="300px"}
-</div>
 
-### Tip
-
-<div class="c-project-callout c-project-callout--tip">
-
-`width` is the width of the screen and `width/2` will be half this, at the centre of the screen. 
-
-</div>
+> [!TIP]
+> `width` is the width of the screen and `width/2` will be half this, at the centre of the screen.
 
 Run your code and check that you see a black background with half a planet at the bottom.

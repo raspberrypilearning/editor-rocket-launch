@@ -1,10 +1,10 @@
-<h2 class="c-project-heading--task">Draw the rocket</h2>
+## Draw the rocket
 
 Make the rocket appear on the screen.
 
 ## Step 1
 
-First add `rocket_position` to start at 400 (the screen height). 
+First add `rocket_position` to start at 400 (the screen height).
 
 Then add another `image()` and use `rocket_position` as the y coordinate.
 
@@ -12,15 +12,7 @@ Then add another `image()` and use `rocket_position` as the y coordinate.
 
 Move your rocket and change it to the size you want by editing the code.
 
-
-<div class="c-project-code">
---- code ---
----
-language: python
-line_numbers: true
-line_number_start: 4
-line_highlights: 5, 22-23 
----
+```python line_numbers="true" line_number_start="4" line_highlights="5,22-23"
 # Define variables
 rocket_position = 400
 
@@ -41,8 +33,7 @@ def draw():
 
     # Rocket
     image(rocket, width/2, rocket_position, 64, 64)    
---- /code ---
-</div>
+```
 
 ## Now run your code
 
